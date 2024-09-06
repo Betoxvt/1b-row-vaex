@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "1b-rows-vaex"
+version = "0.1.0"
+description = ""
+authors = ["Roberto Guedes <robertoguedes@edu.univali.br>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.10.14"
+vaex = "^4.17.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
