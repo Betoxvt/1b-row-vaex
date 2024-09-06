@@ -1,6 +1,6 @@
 import vaex
 
-arquivo = 'data/measurements.txt'
+arquivo = 'data/measurements1M.txt'
 
 def process_data(df):
 

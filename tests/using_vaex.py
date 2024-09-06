@@ -1,6 +1,9 @@
+# 100M levou 2.79s (mais 28.94s da conversão para hdf5)
+# 1B levou 32.46s (mais 316.52s da conversão para hdf5)
+
 import vaex
 
-arquivo = 'data/measurements.txt'
+arquivo = 'data/measurements.txt.hdf5'
 
 
 def process_file(arquivo, chunk_size=100_000_000):
@@ -34,7 +37,7 @@ if __name__ == "__main__":
 
     start_time = time.time()
 
-    df = process_file(arquivo)
+    df = vaex.open(arquivo)
 
     df_final = process_data(df)
 
